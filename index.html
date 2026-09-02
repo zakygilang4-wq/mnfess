@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Menfess AI</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+
+      <div>
+        <div class="badge">
+          🤖 AI MODERATED
+        </div>
+
+        <h1>
+          Menfess AI
+        </h1>
+
+        <p>
+          Kirim pesan secara anonim.
+        </p>
+      </div>
+
+      <div class="emoji">
+        💌
+      </div>
+
+    </header>
+
+    <section class="card">
+
+      <h2>
+        Kirim Menfess
+      </h2>
+
+      <textarea
+        id="message"
+        maxlength="1000"
+        placeholder="Tulis menfess kamu..."
+      ></textarea>
+
+      <div class="bottom">
+
+        <span id="counter">
+          0/1000
+        </span>
+
+        <button id="send">
+          Kirim Anonim →
+        </button>
+
+      </div>
+
+      <div id="status"></div>
+
+    </section>
+
+    <section>
+
+      <div class="feed-header">
+
+        <h2>
+          Menfess Terbaru
+        </h2>
+
+        <button
+          onclick="loadMessages()"
+          class="refresh"
+        >
+          ↻
+        </button>
+
+      </div>
+
+      <div id="feed"></div>
+
+    </section>
+
+    <footer>
+      Menfess AI • Anonymous • AI Moderated
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
